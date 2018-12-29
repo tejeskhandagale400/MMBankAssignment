@@ -13,9 +13,9 @@ public class Bootstrap {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection connection = DriverManager.getConnection
 					("jdbc:mysql://localhost:3306/bankapp_db", "root", "root");
-			PreparedStatement preparedStatement = 
+			/*PreparedStatement preparedStatement = 
 					connection.prepareStatement("DELETE FROM ACCOUNT");
-			preparedStatement.execute();
+			preparedStatement.execute();*/
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
